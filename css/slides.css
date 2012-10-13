@@ -1,3 +1,14 @@
 /**
   * Styles for Drupalcamp 2012 slides
   */
+
+/* Slide 1 */
+
+#presenta {  background: url(../images/bob/1.jpg) no-repeat scroll center 90% #FFF }
+.author { width: 44%; float: left; margin: 100px 0 0; padding: 5% 2% }
+.author h3.name { font-size: 0.7em; margin: 0; padding: 0 }
+.author p.position { font-size: 0.5em; margin: 0 0 0 -6px; padding: 3px 6px; background-color: #999; color: #FFF;
+  border-radius: 6px }
+.author p.twitter { font-size: 0.5em; margin: 0; padding: 0 0 0 36px; line-height: 36px;
+  background: url(../images/twitter.png) no-repeat scroll 0 center transparent }
+
