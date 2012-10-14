@@ -2,13 +2,108 @@
   * Styles for Drupalcamp 2012 slides
   */
 
-/* Slide 1 */
+/* General styles */
 
-#presenta {  background: url(../images/bob/1.jpg) no-repeat scroll center 90% #FFF }
-.author { width: 44%; float: left; margin: 100px 0 0; padding: 5% 2% }
-.author h3.name { font-size: 0.7em; margin: 0; padding: 0 }
+@font-face {
+  font-family: 'bob-esponja';
+  src: url('fonts/bob-esponja-webfont.eot');
+  src: url('fonts/bob-esponja-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/bob-esponja-webfont.woff') format('woff'),
+    url('fonts/bob-esponja-webfont.ttf') format('truetype'),
+    url('fonts/bob-esponja-webfont.svg#spongefont_squaresquaretypeRg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.slide { text-shadow: 0 0 0 transparent }
+
+h1,
+h2,
+h3,
+h4 { font-family: 'bob-esponja', arial, sans-serif }
+
+/* Slides */
+
+/* -- Slide 1 - Welcome */
+
+#presenta {  background: url(../images/bob/1.jpg) no-repeat scroll 90% 90% #FFF }
+#presenta h2 { margin: 0.5em 0; font-size: 2.5em }
+.author { width: 44%; float: left; margin: 0; padding: 5% 2% }
+.author h3.name { font-family: Oswald,Helvetica,sans-serif; font-size: 0.7em; margin: 0; padding: 0 }
 .author p.position { font-size: 0.5em; margin: 0 0 0 -6px; padding: 3px 6px; background-color: #999; color: #FFF;
   border-radius: 6px }
 .author p.twitter { font-size: 0.5em; margin: 0; padding: 0 0 0 36px; line-height: 36px;
   background: url(../images/twitter.png) no-repeat scroll 0 center transparent }
+
+/* -- Slide 2 - Crononauta */
+
+#crono { }
+#crono strong { font-family: 'lobster'}
+#crono p { font-family: Helvetica,Arial,sans-serif; font-size:  0.6em; line-height: 1.4em; width: 100% }
+#crono a { font-size: 0.6em; text-align: center; margin: 0; padding: 0; display: block }
+#crono ul { clear: both; margin: 0; padding: 0; overflow: hidden }
+#crono ul li { list-style-type: none; list-style-image: none; width: 50%; float: left; margin: 0; padding: 0; text-align: center }
+#crono .logo { float: right }
+#crono .logo a { background: url("../images/crononito_gravatar.png") no-repeat scroll center top #FFFFFF;
+  border-radius: 10px; float: right; overflow: hidden; margin: 0 0 10px 10px; padding: 220px 0 10px; width: 210px }
+#crono .crononauta-web a { width: 50%; margin: 0 auto }
+
+/* -- Slide 3 - Projects*/
+
+#projects { } 
+#projects ul { margin: 0 auto; padding: 0; overflow: hidden } 
+#projects ul li { list-style-type: none; list-style-image: none; margin: 60px 0; padding: 0; float: left;
+  width: 49%; text-align: center } 
+#projects ul.projects-parts { border-bottom: 3px solid #666 } 
+#projects ul li.separator { border-right: 1px solid #999 } 
+#projects h2.projects { background: url(../images/bob/trabajar.jpg) no-repeat scroll 80% center transparent } 
+#projects h2.drupal { background: url(../images/drupal.png) no-repeat scroll 70% center transparent } 
+
+/* -- Slide 4 - Theme */
+
+#theme { }
+#theme h3 { font-family: Oswald,Helvetica,sans-serif; font-weight: bold; font-size: 0.8em }
+#theme p { font-size: 0.6em; line-height: 1.4em; text-align: center }
+#theme p.definition { margin: 30px 0; padding: 0 0 30px; border-bottom: 3px solid #666; text-align: left; font-style: italic }
+#theme iframe { display: block; margin: 0 auto }
+
+/* -- Slide 5 - Theme structure */
+
+#theme-structure { background: url(../images/bob/estructura.png) no-repeat scroll right bottom #FFF }
+#theme-structure .structure { width: 560px; height: 340px; margin: -10px 0 0; padding: 0; border-radius: 6px;
+  background: url(../images/estructura.png) no-repeat scroll center center transparent }
+
+/* -- Slide 6 - Base - Child theme */
+
+#base-child-theme { }
+#base-child-theme p.definition { font-size: 0.6em }
+#base-child-theme .inherited { width: 48%; float: left; overflow: hidden; margin: 0 0 20px }
+#base-child-theme .inherited p { font-size: 0.5em }
+#base-child-theme .inherited ul { }
+#base-child-theme .inherited ul li { font-size: 0.5em }
+#base-child-theme .not-inherited { width: 48%; float: left; overflow: hidden; margin: 0 0 20px }
+#base-child-theme .not-inherited p { font-size: 0.5em }
+#base-child-theme .not-inherited ul { }
+#base-child-theme .not-inherited ul li { font-size: 0.5em }
+#base-child-theme ul.themes { background-color: #FFF; overflow: hidden; display: block; margin: 0 auto; padding: 0; clear: both }
+#base-child-theme ul.themes li { list-style-type: none; list-style-image: none; width: 24%; min-height: 150px; float: left;
+  margin: 0; padding: 10px 0; text-indent: -9999em }
+#base-child-theme ul.themes .fusion { background: url(../images/fusion.png) no-repeat scroll center center transparent }
+#base-child-theme ul.themes .zen { background: url(../images/zen.png) no-repeat scroll center center transparent }
+#base-child-theme ul.themes .omega { background: url(../images/omega.png) no-repeat scroll center center transparent }
+#base-child-theme ul.themes .adaptative { background: url(../images/adaptive.png) no-repeat scroll center center transparent }
+
+/* -- Slide 7 - template.php */
+
+#info-file { }
+#info-file pre code { font-size: 0.3em; line-height: 1em }
+#info-file .documentation { float: right; clear: both; margin: 5px 0 0; padding: 0 }
+#info-file .documentation a { font-size: 0.4em; font-weight: bold; line-height: 1em; text-shadow: 0 0 0 transparent;
+  display: block; margin: 0; padding: 3px 6px }
+
+/* -- Slide 8 - template.php */
+
+#template-php { }
+#template-php h2 { margin: 1.5em 0 }
+#template-php p { margin: 0.5em 0; text-align: center }
 

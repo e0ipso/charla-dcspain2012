@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>¡No todo va en el TPL! | por Mateu i Moi</title>
+    <title>¡No todo va en el TPL! | por Mateu Aguiló y Moisés Rodríguez</title>
     
     <meta name="description" content="Presentación para la charcha de la Drupalcamp 2012 de Madrid. @e0ipso &amp; @vengador" />
     
@@ -17,7 +17,8 @@
 
     <!-- Our own styles for slides-->
     <link href="css/slides.css" rel="stylesheet" />
-   
+     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Capriola|Lobster" />
+  
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
@@ -46,28 +47,26 @@
     <div id="presenta" class="step slide" data-x="5000" data-y="-1500" data-rotate-y="40" data-z="5001">
       <h2>¡No todo va en el TPL!</h2>
       <div class="author separator">
-        <h3 class="name">Mateu Aguiló Bosch</h3>
+        <h3 class="name">Mateu Aguilo Bosch</h3>
         <p class="position">Drupal Evangelist</p>
         <p class="twitter">@e0ipso</p>
       </div>
       <div class="author">
-        <h3 class="name">Moisés Rodríguez Carmona</h3>
+        <h3 class="name">Moises Rodriguez Carmona</h3>
         <p class="position">Brown cleaner</p>
         <p class="twitter">@vengador</p>
       </div>
     </div>
     <div id="crono" class="step" data-x="5000" data-y="-1500" data-z="5000" data-rotate-y="40" data-rotate="-25" data-scale="0.02">
       <h2>Crononauta</h2>
-      <div class="crononauta-web"></div>
-      <div class="logo">@crononito<br />http://www.twitter.com/crononito</div>
-      <ul class="sections list">
-        <li class="separator">Frontend</li>
-        <li>Backend</li>
-      </ul>
+      <div class="logo"><a href="http://www.twitter.com/crononito" title="Twitter">@crononito</a></div>
+      <p>Somos un <strong>equipo</strong> de desarrolladores web y administradores de sistemas con amplia experiencia. Ofrecemos <strong>servicios</strong> de definición y gestión de proyectos, desarrollo a medida y administración de sistemas.</p>
+      <p>Estamos especializados en <strong>PHP</strong>, <strong>Drupal</strong> y <strong>Ruby On Rails</strong>. Estudiamos cómo aprovechar aún más la tecnología conocida (MySQL, <strong>Varnish</strong>) y aplicamos con éxito tecnologías más recientes (MongoDB, memcached, APC). Tenemos amplia experiencia en distintas infraestructuras de sistemas (Linode, Amazon, CDNs).</p>
+      <div class="crononauta-web"><a href="http://www.crononauta.com" title="Web Crononauta">http://crononauta.com</a></div>
     </div>
 
     <div id="projects" class="step slide" data-x="5000" data-y="-1500" data-z="2000">
-      <h2>Proyectos</h2>
+      <h2 class="projects">Proyectos</h2>
       <ul class="projects-parts">
         <li class="separator">Frontend</li>
         <li>Backend</li>
@@ -76,7 +75,7 @@
         <li class="separator">Theme</li>
         <li>Modules</li>
       </ul>
-      <h2>Drupal</h2>
+      <h2 class="drupal">Drupal</h2>
     </div>
     <div id="theme" class="step" data-x="6000" data-y="-1500" data-z="2000">
       <h2>Temas en Drupal</h2>
@@ -86,27 +85,31 @@
       <iframe class="lots-of-themes" src="https://drupal.org/project/themes#project-solr-browse-projects-form"></iframe>
     </div>
     <div id="theme-structure" class="step slide" data-x="6000" data-y="-700" data-z="2000">
-      <h2>Estructura de ficheros del theme</h2>
+      <h2>Estructura de ficheros del tema</h2>
       <div class="structure"></div>
     </div>
     <div id="base-child-theme" class="step" data-x="5000" data-y="-600" data-z="2000" data-rotate="-30">
-      <h2>Padres (base theme) e hijos (sub-theme)</h2>
+      <h2>Temas padres e hijos</h2>
       <p class="definition">En Drupal está permitido crear un tema a partir de otro.</p>
-      <p>Un tema hijo hereda del padre:</p>
-      <ul>
-        <li>Ficheros CSS</li>
-        <li>Ficheros Javascript</li>
-        <li>template.php</li>
-        <li>Ficheros tpl</li>
-        <li>Captura de pantalla</li>
-      </ul>
-      <p>No se hereda:</p>
-      <ul>
-        <li>Logo</li>
-        <li>Favicon</li>
-        <li>Regiones añadidas</li>
-        <li>Características añadidas</li>
-      </ul>
+      <div class="inherited">
+        <p>Hereda del padre:</p>
+        <ul>
+          <li>Ficheros CSS</li>
+          <li>Ficheros Javascript</li>
+          <li>template.php</li>
+          <li>Ficheros tpl</li>
+          <li>Captura de pantalla</li>
+        </ul>
+      </div>
+      <div class="not-inherited">
+        <p>No se hereda:</p>
+        <ul>
+          <li>Logo</li>
+          <li>Favicon</li>
+          <li>Regiones añadidas</li>
+          <li>Características añadidas</li>
+        </ul>
+      </div>
       <ul class="themes">
         <li class="fusion">Fusion</li>
         <li class="zen">Zen</li>
@@ -114,14 +117,56 @@
         <li class="adaptative">Adaptative Theme</li>
       </ul>
     </div>
-    <div id="template-php" class="step circle" data-x="5500" data-y="-1000" data-z="1200" data-rotate-y="45" data-rotate-x="15">
-      <h2>template.php</h2>
-      <p>El archivo template.php define una serie de funciones que se encargan de procesar y dejar disponibles para su uso en las plantillas las variables que mencionamos antes.</p>
+    <div id="info-file" class="slide step" data-x="5500" data-y="-1000" data-z="1400" data-rotate-y="45" data-rotate-x="15">
+      <h2>Fichero .info</h2>
+      <pre><code>
+      name = Bob Esponja Theme
+      description = A fully featured theme for fondo-bikini.es
+      base theme = fusion_core
+      core = 7.x
+      engine = phptemplate
+      
+      stylesheets[all][] = css/style.css
+      
+      scripts[] = js/scripts.js
+      
+      ; --------------------------------------------------------------------------------
+      ; Regions.
+      ; --------------------------------------------------------------------------------
+      regions[sidebar_first] = Sidebar first
+      regions[sidebar_second] = Sidebar second
+      regions[header_top] = Header top
+      regions[header] = Header
+      regions[main_menu] = Main menu
+      regions[content] = Content
+      regions[footer] = Footer
+      regions[page_top] = Page top
+      regions[page_bottom] = Page bottom
+      
+      ; --------------------------------------------------------------------------------
+      ; Define features supported by this theme.
+      ; --------------------------------------------------------------------------------
+      features[] = logo
+      features[] = name
+      features[] = slogan
+      features[] = favicon
+      
+      ; --------------------------------------------------------------------------------
+      ; Default theme settings.
+      ; --------------------------------------------------------------------------------
+      settings[theme_grid] = grid12-960
+      ...
+      </code></pre>
+      <div class="documentation"><a href="http://drupal.org/node/171205" title="Writing theme .info files">Documentación</a></div>
     </div>
 
+   <div id="template-php" class="step circle" data-x="5500" data-y="-1000" data-z="1200" data-rotate-y="45" data-rotate-x="15">
+      <h2>template.php</h2>
+      <p>El archivo template.php define una serie de funciones que se encargan de procesar y dejar disponibles una serie de variables para su uso en las plantillas.</p>
+    </div>
 
     <div id="in-tpl" class="step slide" data-x="1500" data-y="-1500" data-z="-500" data-rotate-y="90">
-        <h2>¿Qué <strong>debería</strong> ir en un TPL?</h2>
+        <h2>¿Que <strong>deberia</strong> ir en un TPL?</h2>
         <p>Poca cosa:</p>
         <ul>
           <li>HTML</li>
@@ -185,7 +230,7 @@
     </div>
     
     <div id="prep" class="step circle" data-x="1100" data-y="-1900" data-z="-500" data-rotate-x="90" data-rotate="270">
-        <h2>¿De dónde saco esas <strong>variables</strong>?</h2>
+        <h2>¿De donde saco esas <strong>variables</strong>?</h2>
         <p>Cálculo de datos necesarios:</p>
         <ul>
           <li>Módulo</li>
@@ -270,7 +315,7 @@
   <div id="ds-v" class="step slide" data-x="5000" data-y="-2500">
     <h2>Display Suite - Resultados</h2>
     <div class="image">
-      <img src="images/display_suite_visualizacion" alt="Visualización Display Suite" width="721" height="846" />
+      <img src="images/display_suite_visualizacion.png" alt="Visualización Display Suite" width="721" height="846" />
     </div>
   </div>
 
@@ -313,7 +358,9 @@ if ("ontouchstart" in document.documentElement) {
 </script>
 
 <script src="js/impress.js"></script>
-<script>impress().init();</script>
+<script>
+  // impress().init();
+</script>
 
 </body>
 </html>
