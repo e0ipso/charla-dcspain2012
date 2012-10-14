@@ -212,6 +212,11 @@ p.note {
   font-style: italic;
 }
 
+.step img {
+  width: 100%;
+  height: auto;
+}
+
 /*
     Now let's style the presentation steps.
     

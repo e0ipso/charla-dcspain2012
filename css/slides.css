@@ -1,4 +1,5 @@
 /**
+  * @file
   * Styles for Drupalcamp 2012 slides
   */
 
@@ -12,3 +13,97 @@
 .author p.twitter { font-size: 0.5em; margin: 0; padding: 0 0 0 36px; line-height: 36px;
   background: url(../images/twitter.png) no-repeat scroll 0 center transparent }
 
+/* Recap slide */
+#recap ol li {
+  -webkit-transition: 0.5s;
+  -moz-transition:    0.5s;
+  -ms-transition:     0.5s;
+  -o-transition:      0.5s;
+  transition:         0.5s;
+}
+
+#recap.present ol li {
+  margin: 1em 0;
+}
+
+#recap.future ol li:first-of-type,
+#recap.past ol li:first-of-type {
+  opacity: 0;
+}
+
+#recap.present ol li:first-of-type {
+  opacity: 1;
+  color: black;
+  -webkit-transition-delay: 1.25s;
+  -moz-transition-delay:    1.25s;
+  -ms-transition-delay:     1.25s;
+  -o-transition-delay:      1.25s;
+  transition-delay:         1.25s;
+}
+
+#recap.future ol li:nth-child(2),
+#recap.past ol li:nth-child(2) {
+  -webkit-transform: translateX(-250px);
+  -moz-transform:    translateX(-250px);
+  -ms-transform:     translateX(-250px);
+  -o-transform:      translateX(-250px);
+  transform:         translateX(-250px);
+}
+
+#recap.present ol li:nth-child(2) {
+  -webkit-transform: translateX(100px);
+  -moz-transform:    translateX(100px);
+  -ms-transform:     translateX(100px);
+  -o-transform:      translateX(100px);
+  transform:         translateX(100px);
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay:    0.5s;
+  -ms-transition-delay:     0.5s;
+  -o-transition-delay:      0.5s;
+  transition-delay:         0.5s;
+}
+
+#recap.future ol li:last-child,
+#recap.past ol li:last-child {
+  -webkit-transform: rotate(3deg);
+  -moz-transform:    rotate(3deg);
+  -ms-transform:     rotate(3deg);
+  -o-transform:      rotate(3deg);
+  transform:         rotate(3deg);
+}
+
+#recap.present ol li:last-child {
+  -webkit-transform: rotate(-3deg);
+  -moz-transform:    rotate(-3deg);
+  -ms-transform:     rotate(-3deg);
+  -o-transform:      rotate(-3deg);
+  transform:         rotate(-3deg);
+  -webkit-transition-delay: 0.75s;
+  -moz-transition-delay:    0.75s;
+  -ms-transition-delay:     0.75s;
+  -o-transition-delay:      0.75s;
+  transition-delay:         0.75s;
+}
+
+#recap.present h2 {
+  -webkit-transform: translateY(575px);
+  -moz-transform:    translateY(575px);
+  -ms-transform:     translateY(575px);
+  -o-transform:      translateY(575px);
+  transform:         translateY(575px);
+  z-index: -1;
+  opacity: 0.25;
+  -webkit-transition: 3s ease-out;
+  -moz-transition:    3s ease-out;
+  -ms-transition:     3s ease-out;
+  -o-transition:      3s ease-out;
+  transition:         3s ease-out;
+  -webkit-transition-delay: 15s;
+  -moz-transition-delay:    15s;
+  -ms-transition-delay:     15s;
+  -o-transition-delay:      15s;
+  transition-delay:         15s;
+}
+
+/* Display suite resultados */
+#ds-v.step h2 .right { right: -2.25em; }
