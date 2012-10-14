@@ -282,6 +282,27 @@ p.note {
     text-align: right;
 }
 
+.step div.clearfix div.right,
+.step div.clearfix div.left {
+  width: 50%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid red
+}
+.step div.clearfix div.left {
+  float: left;
+  padding-right: 2%;
+  border-width: 0 2px 0 0;
+}
+.step div.clearfix div.right {
+  float: right;
+  padding-left: 2%;
+  border-width: 0 0 0 2px;
+}
+.step div.clearfix {
+  overflow: hidden;
+}
 /*
     ... and we enhance the styles for impress.js.
     

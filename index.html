@@ -89,24 +89,24 @@
       <h2>Estructura de ficheros del theme</h2>
       <div class="structure"></div>
     </div>
-    <div id="base-child-theme" class="step" data-x="5000" data-y="-600" data-z="2000" data-rotate="-30">
-      <h2>Padres (base theme) e hijos (sub-theme)</h2>
+    <div id="base-child-theme" class="step circle" data-x="5000" data-y="-600" data-z="2000" data-rotate="-30">
+      <h2><span class="top">Padres (base theme)</span><span class="bottom">hijos (sub-theme)</span></h2>
       <p class="definition">En Drupal está permitido crear un tema a partir de otro.</p>
-      <p>Un tema hijo hereda del padre:</p>
+      <div class="clearfix"><div class="left"><p>Un tema hijo hereda del padre:</p>
       <ul>
         <li>Ficheros CSS</li>
         <li>Ficheros Javascript</li>
         <li>template.php</li>
         <li>Ficheros tpl</li>
         <li>Captura de pantalla</li>
-      </ul>
-      <p>No se hereda:</p>
+      </ul></div>
+      <div class="right"><p>No se hereda:</p>
       <ul>
         <li>Logo</li>
         <li>Favicon</li>
         <li>Regiones añadidas</li>
         <li>Características añadidas</li>
-      </ul>
+      </ul></div></div>
       <ul class="themes">
         <li class="fusion">Fusion</li>
         <li class="zen">Zen</li>
@@ -164,7 +164,7 @@
   &lt;/nav&gt;
   &lt;?php endif ?&gt;
 &lt;/div&gt;
-&lt;div&lt;?php print $content_attributes; ?&gt;&gt;
+&lt;div&lt;?php print $squidward_attributes; ?&gt;&gt;
   &lt;div class=&quot;clearfix&quot;&gt;
     &lt;?php if ($display_submitted): ?&gt;
     &lt;footer class=&quot;submitted&quot;&gt;
@@ -172,12 +172,12 @@
     &lt;/footer&gt;
     &lt;?php endif; ?&gt;
     &lt;?php print
-      render($content[&#x27;linked_locality&#x27;]); ?&gt;
+      render($content[&#x27;mr_krabs&#x27;]); ?&gt;
   &lt;/div&gt;
   &lt;?php
-    hide($content[&#x27;field_cupo_direccio&#x27;]);
-    hide($content[&#x27;field_cupo_preu_final&#x27;]);
-    hide($content[&#x27;field_cupo_preu_original&#x27;]);
+    hide($content[&#x27;field_pinapple&#x27;]);
+    hide($content[&#x27;field_ocean&#x27;]);
+    hide($content[&#x27;field_square_pants&#x27;]);
     print render($content);
   ?&gt;
 &lt;/div&gt;
