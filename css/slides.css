@@ -94,7 +94,7 @@ h4 { font-family: 'bob-esponja', arial, sans-serif }
 #base-child-theme ul.themes .omega { background: url(../images/omega.png) no-repeat scroll center center transparent }
 #base-child-theme ul.themes .adaptative { background: url(../images/adaptive.png) no-repeat scroll center center transparent }
 
-/* -- Slide 7 - template.php */
+/* -- Slide 7 - info file */
 
 #info-file { }
 #info-file pre code { font-size: 0.3em; line-height: 1em }
@@ -107,6 +107,32 @@ h4 { font-family: 'bob-esponja', arial, sans-serif }
 #template-php { }
 #template-php h2 { margin: 1.5em 0 }
 #template-php p { margin: 0.5em 0; text-align: center }
+
+/* -- Slide 9 - Basic templates in a theme */
+
+#basic-tpls { }
+#basic-tpls .schema { display: block; width: 478px; height: 440px; margin: -30px auto 0; padding: 0;
+  background: url(../images/plantillas.jpg) no-repeat scroll center center transparent }
+
+/* -- Slide - Error cases */
+
+#error-cases { background: url(../images/bob/horror.gif) no-repeat scroll center 90% #FFF }
+#error-cases .line-through { text-decoration: line-through; color: #999 }
+
+/* -- Slide - Bonus */
+
+#bonus-i { background: url(../images/bob/bonus.jpg) no-repeat scroll center 90% #FFF }
+#bonus-ii { background: url(../images/bob/bonus-ii.jpg) no-repeat scroll 95% 90% #FFF }
+
+/* -- Slide - The end */
+
+#the-end { }
+#the-end p.questions { text-align: center; font-size: 3em; margin: 1.5em 0 0 }
+
+/* -- Slide - Thank you */
+
+#thanks { }
+#thanks p.thank-you { text-align: center; font-size: 3em; margin: 1em 0; padding: 0 }
 
 /* Recap slide */
 #recap ol li {
