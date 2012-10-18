@@ -375,7 +375,7 @@ p.note {
     to be able to click on other steps.
 
 */
-#overview { display: none }
+.overview { display: none }
 
 /*
     We also make other steps visible and give them a pointer cursor using the

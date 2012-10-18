@@ -44,7 +44,7 @@
 -->
 
 <div id="impress">
-    <div id="presenta" class="step slide" data-x="5000" data-y="-1500" data-rotate-y="40" data-z="5001">
+    <div id="presenta" class="step" data-x="0" data-y="0" data-z="0" data-scale="200">
       <h2>¡No todo va en el TPL!</h2>
       <div class="author separator">
         <h3 class="name">Mateu Aguilo Bosch</h3>
@@ -57,7 +57,7 @@
         <p class="twitter">@vengador</p>
       </div>
     </div>
-    <div id="crono" class="step" data-x="5000" data-y="-1500" data-z="5000" data-rotate-y="40" data-rotate="-25" data-scale="0.02">
+    <div id="crono" class="step" data-x="-60000" data-y="-20000" data-z="0" data-scale="4">
       <h2>Crononauta</h2>
       <div class="logo"><a href="http://www.twitter.com/crononito" title="Twitter">@crononito</a></div>
       <p>Somos un <strong>equipo</strong> de desarrolladores web y administradores de sistemas con amplia experiencia. Ofrecemos <strong>servicios</strong> de definición y gestión de proyectos, desarrollo a medida y administración de sistemas.</p>
@@ -65,7 +65,7 @@
       <div class="crononauta-web"><a href="http://www.crononauta.com" title="Web Crononauta">http://crononauta.com</a></div>
     </div>
 
-    <div id="projects" class="step slide" data-x="5000" data-y="-1500" data-z="2000">
+    <div id="projects" class="step" data-x="-55000" data-y="-20000" data-scale="4">
       <h2 class="projects">Proyectos</h2>
       <ul class="projects-parts">
         <li class="separator">Frontend</li>
@@ -77,18 +77,23 @@
       </ul>
       <h2 class="drupal">Drupal</h2>
     </div>
-    <div id="theme" class="step" data-x="6000" data-y="-1500" data-z="2000">
+    <div id="theme" class="step circle" data-x="-55000" data-y="-16000" data-scale="4">
       <h2>Temas en Drupal</h2>
       <h3>¿Qué es un tema?</h3>
       <p class="definition">Un conjunto de ficheros que nos van a permitir cambiar el aspecto del sitio Drupal.</p>
       <p>En drupal.org tenemos muchos temas (+ 1025).</p>
       <iframe class="lots-of-themes" src="https://drupal.org/project/themes#project-solr-browse-projects-form"></iframe>
+      <p><em>live</em></p>
     </div>
-    <div id="theme-structure" class="step slide" data-x="6000" data-y="-700" data-z="2000">
+    <div id="veamos" class="step" data-x="-50000" data-y="-16000" data-scale="4">
+      <h2>Veamos…</h2>
+    </div>
+
+    <div id="theme-structure" class="step slide" data-x="-50000" data-y="-16000" data-rotate-x="90">
       <h2>Estructura de ficheros del tema</h2>
       <div class="structure"></div>
     </div>
-    <div id="base-child-theme" class="step" data-x="5000" data-y="-600" data-z="2000" data-rotate="-30">
+    <div id="base-child-theme" class="step" data-x="-49000" data-y="-16000" data-z="400" data-rotate-x="90" data-rotate="30">
       <h2>Temas padres e hijos</h2>
       <p class="definition">En Drupal está permitido crear un tema a partir de otro.</p>
       <div class="inherited">
@@ -117,60 +122,61 @@
         <li class="adaptative">Adaptative Theme</li>
       </ul>
     </div>
-    <div id="info-file" class="slide step" data-x="5500" data-y="-1000" data-z="1400" data-rotate-y="45" data-rotate-x="15">
+    <div id="info-file" class="slide step" data-x="-48300" data-y="-16000" data-z="1260" data-rotate-x="90" data-rotate="60">
       <h2>Fichero .info</h2>
       <pre><code>
-      name = Bob Esponja Theme
-      description = A fully featured theme for fondo-bikini.es
-      base theme = fusion_core
-      core = 7.x
-      engine = phptemplate
-      
-      stylesheets[all][] = css/style.css
-      
-      scripts[] = js/scripts.js
-      
-      ; --------------------------------------------------------------------------------
-      ; Regions.
-      ; --------------------------------------------------------------------------------
-      regions[sidebar_first] = Sidebar first
-      regions[sidebar_second] = Sidebar second
-      regions[header_top] = Header top
-      regions[header] = Header
-      regions[main_menu] = Main menu
-      regions[content] = Content
-      regions[footer] = Footer
-      regions[page_top] = Page top
-      regions[page_bottom] = Page bottom
-      
-      ; --------------------------------------------------------------------------------
-      ; Define features supported by this theme.
-      ; --------------------------------------------------------------------------------
-      features[] = logo
-      features[] = name
-      features[] = slogan
-      features[] = favicon
-      
-      ; --------------------------------------------------------------------------------
-      ; Default theme settings.
-      ; --------------------------------------------------------------------------------
-      settings[theme_grid] = grid12-960
-      ...
+name = Bob Esponja Theme
+description = A fully featured theme for fondo-bikini.es
+base theme = fusion_core
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = css/style.css
+
+scripts[] = js/scripts.js
+
+; --------------------------------------------------------------------------------
+; Regions.
+; --------------------------------------------------------------------------------
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+regions[header_top] = Header top
+regions[header] = Header
+regions[main_menu] = Main menu
+regions[content] = Content
+regions[footer] = Footer
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+
+; --------------------------------------------------------------------------------
+; Define features supported by this theme.
+; --------------------------------------------------------------------------------
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = favicon
+
+; --------------------------------------------------------------------------------
+; Default theme settings.
+; --------------------------------------------------------------------------------
+settings[theme_grid] = grid12-960
+...
       </code></pre>
       <div class="documentation"><a href="http://drupal.org/node/171205" title="Writing theme .info files">Documentación</a></div>
     </div>
 
-   <div id="template-php" class="step circle" data-x="5500" data-y="-1000" data-z="1200" data-rotate-y="45" data-rotate-x="15">
+   <div id="template-php" class="step circle" data-x="-48300" data-y="-16000" data-z="2500" data-rotate-x="90" data-rotate="90">
       <h2>template.php</h2>
       <p>El archivo template.php define una serie de funciones que se encargan de procesar y dejar disponibles una serie de variables para su uso en las plantillas.</p>
     </div>
+  <div id="section-2" class="step overview" data-x="0" data-y="0" data-z="0" data-scale="200"></div>
 
-    <div id="basic-tpls" class="step slide" data-x="500" data-y="-1500" data-z="-500" data-rotate-y="90">
+    <div id="basic-tpls" class="step slide" data-x="1500" data-y="-1500" data-z="-500" data-rotate-y="90">
       <h2>Plantillas basicas en un tema</h2>
       <div class="schema"></div>
     </div>
 
-    <div id="in-tpl" class="step slide" data-x="1500" data-y="-1500" data-z="-500" data-rotate-y="90">
+    <div id="in-tpl" class="step slide" data-x="500" data-y="-1500" data-z="-500" data-rotate-y="90">
       <h2>¿Que <strong>deberia</strong> ir en un TPL?</h2>
       <p>Poca cosa:</p>
       <ul>
@@ -179,7 +185,7 @@
       </ul>
     </div>
     
-    <div id="teaser-example-1" class="step" data-x="1500" data-y="-1500" data-rotate-y="90" data-z="-500" data-scale="0.04">
+    <div id="teaser-example-1" class="step" data-x="500" data-y="-1500" data-rotate-y="90" data-z="-500" data-scale="0.04">
         <p>Básicamente sólo debería ir aquí:</p>
         <p><code>if</code>, <code>print</code>, <code>render</code>, <code>isset</code>, <code>empty</code>…</p>
         <pre><code>&lt;article&lt;?php print $attributes; ?&gt;&gt;
@@ -194,47 +200,48 @@
           print render($content[&#x27;field_pants&#x27;]);
         ?&gt;
       &lt;/div&gt;
-      &lt;?php print render($title_prefix); ?&gt;
-      &lt;h2&lt;?php print $title_attributes; ?&gt;&gt;
-        &lt;a href=&quot;&lt;?php print $node_url ?&gt;&quot;
-           title=&quot;&lt;?php print $title ?&gt;&quot;&gt;
-           &lt;?php print $title ?&gt;&lt;/a&gt;&lt;/h2&gt;
-      &lt;?php print render($title_suffix); ?&gt;
+      …</code></pre>
+    </div>
+    <div id="teaser-example-2" class="step" data-x="500" data-y="-1500" data-rotate-y="90" data-z="-550" data-scale="0.04">
+        <pre><code>
+        print render($content[&#x27;field_pants&#x27;]);
+      ?&gt;
     &lt;/div&gt;
-  &lt;/header&gt;
+    …
+    &lt;?php print render($title_prefix); ?&gt;
+    &lt;h2&lt;?php print $title_attributes; ?&gt;&gt;
+      &lt;a href=&quot;&lt;?php print $node_url ?&gt;&quot;
+         title=&quot;&lt;?php print $title ?&gt;&quot;&gt;
+         &lt;?php print $title ?&gt;&lt;/a&gt;&lt;/h2&gt;
+    &lt;?php print render($title_suffix); ?&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
   …</code></pre>
     </div>
-    <div id="teaser-example-2" class="step" data-x="1500" data-y="-1450" data-rotate-y="90" data-z="-500" data-scale="0.04">
-        <pre><code>…
-  &lt;?php
-    if (!(isset(!$content[&#x27;links&#x27;][&#x27;#access&#x27;])):
-  ?&gt;
+    <div id="teaser-example-3" class="step" data-x="500" data-y="-1500" data-rotate-y="90" data-z="-600" data-scale="0.04">
+        <pre><code>
+  …
   &lt;nav class=&quot;links-wrapper&quot;&gt;
     &lt;?php print render($content[&#x27;links&#x27;]); ?&gt;
-  &lt;/nav&gt;
-  &lt;?php endif ?&gt;
-&lt;/div&gt;
-&lt;div&lt;?php print $squidward_attributes; ?&gt;&gt;
-  &lt;div class=&quot;clearfix&quot;&gt;
-    &lt;?php if ($display_submitted): ?&gt;
-    &lt;footer class=&quot;submitted&quot;&gt;
-      &lt;?php print $name; ?&gt;
-    &lt;/footer&gt;
-    &lt;?php endif; ?&gt;
-    &lt;?php print
-      render($content[&#x27;mr_krabs&#x27;]); ?&gt;
+  &lt;/nav&gt;&lt;/div&gt;
+  &lt;div&lt;?php print $squidward_attributes; ?&gt;&gt;
+      &lt;?php if ($display_submitted): ?&gt;
+      &lt;footer class=&quot;submitted&quot;&gt;
+        &lt;?php print $name; ?&gt;&lt;/footer&gt;
+    &lt;/div&gt;
+    &lt;?php
+      hide($content[&#x27;field_pinapple&#x27;]);
+      hide($content[&#x27;field_square_pants&#x27;]);
+      print render($content);
+    ?&gt;
   &lt;/div&gt;
-  &lt;?php
-    hide($content[&#x27;field_pinapple&#x27;]);
-    hide($content[&#x27;field_ocean&#x27;]);
-    hide($content[&#x27;field_square_pants&#x27;]);
-    print render($content);
-  ?&gt;
-&lt;/div&gt;
+  &lt;p&gt;&lt;?php
+    print render($content[&#x27;field_pinapple&#x27;]);
+  ?&gt;&lt;/p&gt;
 &lt;/article&gt;</code></pre>
     </div>
     
-    <div id="prep" class="step circle" data-x="1100" data-y="-1900" data-z="-500" data-rotate-x="90" data-rotate="270">
+    <div id="prep" class="step circle" data-x="500" data-y="-1500" data-z="-1500" data-rotate-y="90">
         <h2>¿De donde saco esas <strong>variables</strong>?</h2>
         <p>Cálculo de datos necesarios:</p>
         <ul>
@@ -248,7 +255,7 @@
         <p class="note">Es típico que haya muchas implementaciones de preprocesado que se convierten en HTML al final en el procesado.</p>
     </div>
     
-  <div id="what-i" class="step slide" data-x="200" data-y="-1900" data-z="-500" data-rotate-x="90" data-rotate="270">
+  <div id="what-i" class="step slide" data-x="500" data-y="-1500" data-z="-2500" data-rotate-y="90">
     <h2>Whaaaaaat?! (I/II)</h2>
     <pre><code>function mytheme_preprocess_node(&$variables) {
   // Añadimos clases para el nodo
@@ -257,7 +264,7 @@
     <p class="note">En nuestro <code>template.php</code> implementamos función de procesado para poder añadir una clase.</p>
   </div>
 
-  <div id="what-ii" class="step slide" data-x="200" data-y="-1900" data-z="-500" data-rotate-x="-90" data-rotate="270">
+  <div id="what-ii" class="step slide" data-x="400" data-y="-1500" data-z="-2500" data-rotate-y="-90">
     <h2>Whaaaaaat?! (II/II)</h2>
     <pre><code>function node_process_node(&$variables) {
   // […]
@@ -266,7 +273,7 @@
     <p class="note">El módulo node recoge todas las clases en el array y genera el string que insertaremos en el TPL.</p>
   </div>
   
-  <div id="recap" class="slide step" data-x="-600" data-y="-1900" data-z="-500" data-rotate-x="-90" data-rotate="270">
+  <div id="recap" class="slide step" data-x="400" data-y="-1500" data-z="-1500" data-rotate-y="-90">
     <h2>Recapitulando</h2>
     <ol>
       <li>Los módulos calculan/recuperan/generan datos.</li>
@@ -274,20 +281,22 @@
       <li>En el TPL se insertan los datos rodeados de HTML.</li>
     </ol>
   </div>
+  <div id="section-3" class="step overview" data-x="50000" data-y="0" data-z="0" data-scale="200"></div>
 
-  <div id="error-cases" class="slide step" data-x="-600" data-y="-1900" data-z="-1500" data-rotate="180">
+  <div id="error-cases" class="slide step" data-x="230000" data-y="0" data-z="-1500"data-scale="100">
     <h2>Casos de <span class="line-through">horror</span> error!</h2>
     <ol>
-      <li>El "preprocess_block" maldito</li>
-      <li>--Caso de Mateu--</li>
+      <li>El <strong>preprocess_block</strong> maldito</li>
+      <li>El caso de los <strong>datos fantasma</strong>.</li>
     </ol>
   </div>
  
-  <div id="bonus-i" class="step slide" data-x="-1000" data-y="-1500">
+  <div id="bonus-i" class="step slide" data-x="297500" data-y="-17500" data-z="-1500"data-scale="50">
     <h2>¡Bonus!</h2>
+    <p>Pedimos disculpas por los mareos ocasionados.</p>
   </div>
 
-  <div id="bonus-ii" class="step slide" data-x="0" data-y="-1500">
+  <div id="bonus-ii" class="step slide" data-x="297500" data-y="17500" data-z="-1500"data-scale="50">
     <h2>Modulos que nos facilitan la vida a los themers</h2>
     <ul>
       <li>Display Suite</li>
@@ -295,7 +304,7 @@
     </ul>
   </div>
 
-  <div id="ds-i" class="step slide" data-x="1000" data-y="-2500" data-z="800">
+  <div id="ds-i" class="step slide" data-x="331250" data-y="8750" data-z="-1500"data-scale="25">
     <h2>Display Suite</h2>
     <p>Permite tomar el control completo (mediante una interfaz visual) sobre:</p>
     <ul>
@@ -304,14 +313,14 @@
     </ul>
   </div>
 
-  <div id="ds-ii" class="step slide" data-x="1000" data-y="-2500" data-z="-1600" data-rotate="10">
+  <div id="ds-ii" class="step slide" data-x="337250" data-y="26250" data-z="-1500"data-scale="25">
     <h2><span class="left">Display Suite</span><span class="right">Modos de visualizacion</span></h2>
     <div class="image">
       <img src="images/display_suite_modos.png" alt="Modos de visualización" width="969" height="448" />
     </div>
   </div>
 
-  <div id="ds-iii" class="step" data-x="2500" data-y="-2500" data-z="-1600" data-rotate="10">
+  <div id="ds-iii" class="step" data-x="331250" data-y="40000" data-z="-1500"data-scale="12.5">
     <h2><span class="top">Display Suite</span><span class="bottom">Disenos</span></h2>
     <div class="image">
       <img src="images/display_suite_diseno.png" alt="Diseños display suite" width="961" height="593" />
@@ -362,7 +371,7 @@
     </div>
   </div>
 
-  <div id="overview" class="step slide" data-x="1000" data-y="1000" data-rotate="0" data-scale="10" data-z="0" data-rotate-z="180" data-rotate-y="45" data-rotate-x="60" data-z="1000"></div>
+  <div id="overview" class="step slide overview" data-x="1000" data-y="1000" data-rotate="0" data-scale="10" data-z="0" data-rotate-z="180" data-rotate-y="45" data-rotate-x="60" data-z="1000"></div>
 
 </div>
 

@@ -27,7 +27,7 @@ h4 { font-family: 'bob-esponja', arial, sans-serif }
 
 /* -- Slide 1 - Welcome */
 
-#presenta {  background: url(../images/bob/1.jpg) no-repeat scroll 90% 90% #FFF }
+#presenta {  background: url(../images/bob/patrick-and-spongebob-patrick-star-spongebob.png) no-repeat scroll bottom right }
 #presenta h2 { margin: 0.5em 0; font-size: 2.5em }
 .author { width: 44%; float: left; margin: 0; padding: 5% 2% }
 .author h3.name { font-family: Oswald,Helvetica,sans-serif; font-size: 0.7em; margin: 0; padding: 0 }
@@ -57,8 +57,20 @@ h4 { font-family: 'bob-esponja', arial, sans-serif }
   width: 49%; text-align: center } 
 #projects ul.projects-parts { border-bottom: 3px solid #666 } 
 #projects ul li.separator { border-right: 1px solid #999 } 
-#projects h2.projects { background: url(../images/bob/trabajar.jpg) no-repeat scroll 80% center transparent } 
-#projects h2.drupal { background: url(../images/drupal.png) no-repeat scroll 70% center transparent } 
+#projects h2.projects {
+  background: #FFF url(../images/bob/trabajar.jpg) no-repeat scroll 80% center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+} 
+#projects h2.drupal {
+  background: #FFF url(../images/drupal.png) no-repeat scroll 70% center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+} 
 
 /* -- Slide 4 - Theme */
 
@@ -104,7 +116,8 @@ h4 { font-family: 'bob-esponja', arial, sans-serif }
 
 /* -- Slide 8 - template.php */
 
-#template-php { }
+#template-php { background-image: url(../images/bob/calamardoemomodeon.png); background-repeat: no-repeat; background-position: 90% 87%;
+}
 #template-php h2 { margin: 1.5em 0 }
 #template-php p { margin: 0.5em 0; text-align: center }
 
