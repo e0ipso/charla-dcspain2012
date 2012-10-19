@@ -27,7 +27,7 @@ h4 { font-family: 'bob-esponja', arial, sans-serif }
 
 /* -- Slide 1 - Welcome */
 
-#presenta {  background: url(../images/bob/patrick-and-spongebob-patrick-star-spongebob.png) no-repeat scroll bottom right }
+#presenta {  background: url(../images/bob/patrick-and-spongebob-patrick-star-spongebob.png) no-repeat scroll top right }
 #presenta h2 { margin: 0.5em 0; font-size: 2.5em }
 .author { width: 44%; float: left; margin: 0; padding: 5% 2% }
 .author h3.name { font-family: Oswald,Helvetica,sans-serif; font-size: 0.7em; margin: 0; padding: 0 }
@@ -139,12 +139,14 @@ h4 { font-family: 'bob-esponja', arial, sans-serif }
 
 /* -- Slide - The end */
 
-#the-end { }
+#the-end {
+  background: url(../images/bob/spongebob-blushing.png) no-repeat right bottom #ffffff;
+}
 #the-end p.questions { text-align: center; font-size: 3em; margin: 1.5em 0 0 }
 
 /* -- Slide - Thank you */
 
-#thanks { }
+#thanks {}
 #thanks p.thank-you { text-align: center; font-size: 3em; margin: 1em 0; padding: 0 }
 
 /* Recap slide */
@@ -237,6 +239,13 @@ h4 { font-family: 'bob-esponja', arial, sans-serif }
   -ms-transition-delay:     15s;
   -o-transition-delay:      15s;
   transition-delay:         15s;
+}
+
+/* Display suite modos de visualización */
+#ds-ii p {
+  font-size: 0.6em;
+  font-style: italic;
+  text-align: right;
 }
 
 /* Display suite resultados */
