@@ -242,6 +242,12 @@ h4 { font-family: 'bob-esponja', arial, sans-serif }
 }
 
 /* Display suite modos de visualización */
+#ds-i p, #ds-i li  {
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+
+/* Display suite modos de visualización */
 #ds-ii p {
   font-size: 0.6em;
   font-style: italic;
